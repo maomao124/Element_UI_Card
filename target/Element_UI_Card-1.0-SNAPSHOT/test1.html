@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Card
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/7
+  Time(创建时间)： 13:19
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+    <style>
+        .el-card{
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+
+    <el-card>
+        <div v-for="item in 5" :key="item">
+            {{'列表' + item}}
+        </div>
+    </el-card>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
